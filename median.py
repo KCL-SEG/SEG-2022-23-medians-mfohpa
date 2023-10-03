@@ -9,9 +9,12 @@ while True:
         print("Some input could not be converted to a number!")
     else:
         break
-if len(numbers) % 2 == 1:
-    print(numbers[len(numbers) / 2])
+
+while len(numbers) > 2:
+    numbers.pop()
+    numbers.pop(0)
+
+if len(numbers) == 1:
+    print(numbers[0])
 else:
-    mid1 = len(numbers) // 2
-    mid2 = mid1 - 1
-    print((numbers[mid1] + numbers[mid2]) / 2)
+    print((numbers[0] + numbers[1]) / 2)
