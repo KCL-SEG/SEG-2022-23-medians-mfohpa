@@ -9,4 +9,9 @@ while True:
         print("Some input could not be converted to a number!")
     else:
         break
-print(numbers)
+if len(numbers) % 2 == 1:
+    print(numbers[len(numbers) / 2])
+else:
+    mid1 = len(numbers) // 2
+    mid2 = mid1 - 1
+    print((numbers[mid1] + numbers[mid2]) / 2)
