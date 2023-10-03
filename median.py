@@ -10,6 +10,8 @@ while True:
     else:
         break
 
+numbers.sort()
+
 while len(numbers) > 2:
     numbers.pop()
     numbers.pop(0)
